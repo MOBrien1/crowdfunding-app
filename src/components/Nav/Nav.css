@@ -1,0 +1,41 @@
+
+
+* {
+    border: 2px red solid;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #000FFF;
+    padding: 5%;
+    margin: 5%;
+}
+
+h1 {
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    vertical-align: middle;
+    color: white;
+    height: fit-content;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: white;
+}
