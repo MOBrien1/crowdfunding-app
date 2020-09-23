@@ -7,12 +7,7 @@ function Nav() {
         <nav>
             <h1>PETBNK</h1>
             <Link to="/">Home</Link>
-            <Link>About</Link>
-            <Link>Profile</Link>
-            <Link to="/project">Project</Link>
-            <Link>Login</Link>
-            <Link>Signup</Link>
-            <Link>Contact</Link>
+
         </nav>
     );
 }
