@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import ProjectPage from "./pages/ProjectPage";
 import HomePage from "./pages/HomePage";
 import Nav from "./components/Nav/Nav";
+import LoginPage from "./pages/LoginPage"
 import "./App.css";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
         <Switch>
           <Route path="/project/:id">
           <ProjectPage />
+          </Route>
+          <Route path="/login">
+            <LoginPage />
           </Route>
           <Route path="/">
           <HomePage />

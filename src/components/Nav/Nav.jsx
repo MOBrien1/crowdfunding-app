@@ -7,6 +7,7 @@ function Nav() {
         <nav>
             <h1>PETBNK</h1>
             <Link to="/">Home</Link>
+            <Link to="/Login">Login</Link>
 
         </nav>
     );

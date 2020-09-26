@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
-import { allProjects } from "../data";
 
 function HomePage() {
 
@@ -23,10 +22,16 @@ useEffect(() => {
 //template
 
     return (
-        <div id="project-list">
-            {projectList.map((projectData, key) => {
-                return <ProjectCard key={key} projectData={projectData} />;
-            })}
+        <div>
+            <div id="PETBNK">
+                <h1>About PETBNK</h1>
+            </div>
+            <div id="project-list">
+                
+                {projectList.map((projectData, key) => {
+                    return <ProjectCard key={key} projectData={projectData} />;
+                })}
+            </div>
         </div>
     );
 }
