@@ -8,24 +8,27 @@ const { id } = useParams();
 useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}projects/${id}/`)
     .then((results) => {
+        console.log(results)
         return results.json();
     })
     .then((data) => {
-    setProjectData(data);
+        console.log(data)
+        setProjectData(data);
     });
 }, [id]); 
 
     return (
         <div>
-            <h2>{projectData.title}</h2>
-            <h3>Created at: {projectData.date_created}</h3>
+            <h2>{`Title: ${projectData.title}`}</h2>
             <h3>{`Status: ${projectData.is_open}`}</h3>
+            <h3>{`Posted: ${projectData.date_created}`}</h3>
+            <img src={projectData.image} alt='project'/>
             <h3> Pledges: </h3>
             <ul>
                 {projectData.pledges.map((pledgeData, key) => {
                     return (
                         <li>
-                            {projectData.amount} from {pledgeData.supporter}
+                            {pledgeData.supporter}
                         </li>
                     );
                 })}

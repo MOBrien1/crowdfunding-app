@@ -15,7 +15,6 @@ useEffect(() => {
     .then((data) => {
         setProjectList(data);
     });
-
     //setProjectList(allProjects);
 }, []);
 
