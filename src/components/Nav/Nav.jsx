@@ -8,6 +8,8 @@ function Nav() {
             <h1>PETBNK</h1>
             <Link to="/">Home</Link>
             <Link to="/Login">Login</Link>
+            <Link to="/AddProject">Create Project</Link>
+            <Link to="/profile/me">Profile</Link>
 
         </nav>
     );

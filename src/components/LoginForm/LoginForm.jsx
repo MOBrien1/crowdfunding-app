@@ -1,5 +1,6 @@
 import React, { useState} from "react";
 import { useHistory } from "react-router-dom";
+import "./LoginForm.css"; 
 
 function LoginForm() {
 
@@ -50,28 +51,30 @@ const handleSubmit = (e) => {
 //template
     return (
         <form>
-            <div>
-                <label htmlFor="username">Username:</label>
-                <input 
-                type="text" 
-                id="username" 
-                placeholder="Enter Username" 
-                onChange={handleChange}
-                />
-            </div>
-            <div>
-                <label htmlFor="password">Password:</label>
-                <input 
-                type="password" 
-                id="password" 
-                placeholder="Enter Password" 
-                onChange={handleChange}
-                />
-            </div>
-            <div>
-                <button type="submit" onClick={handleSubmit}>
-                Login
-                </button>
+            <div className="card">
+                <div>
+                    <label htmlFor="username">Username:</label>
+                    <input 
+                    type="text" 
+                    id="username" 
+                    placeholder="Enter Username" 
+                    onChange={handleChange}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="password">Password:</label>
+                    <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Enter Password" 
+                    onChange={handleChange}
+                    />
+                </div>
+                <div>
+                    <button type="submit" onClick={handleSubmit}>
+                    Login
+                    </button>
+                </div>
             </div>                
         </form>
     );
