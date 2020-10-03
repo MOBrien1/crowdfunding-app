@@ -12,6 +12,7 @@ function AddProject() {
         suburb: "",
         seeking: "",
         is_open: "",
+        date_created: "",
     });
 
     const history = useHistory();
