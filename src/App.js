@@ -5,6 +5,7 @@ import ProfilePage from "./pages/ProfilePage";
 import HomePage from "./pages/HomePage";
 import Nav from "./components/Nav/Nav";
 import LoginPage from "./pages/LoginPage"
+import CreateProject from "./components/CreateProjectForm/CreateProject"
 import "./App.css";
 
 function App() {
@@ -17,7 +18,10 @@ function App() {
           <Route path="/project/:id">
           <ProjectPage />
           </Route>
-          <Route path="/profile/me">
+          <Route path="/projects/">
+          <CreateProject />
+          </Route>
+          <Route path="/profile/me/">
           <ProfilePage />
           </Route>
           <Route path="/login">
