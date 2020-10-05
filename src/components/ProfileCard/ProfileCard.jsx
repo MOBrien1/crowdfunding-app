@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import "./ProfileCard.css";
 
 function ProfileCard() {
@@ -14,26 +15,30 @@ function ProfileCard() {
                 Authorization: `Token ${token}`,
         }})
         .then((results) => {
-            console.log(results)
+            //console.log(results)
             return results.json();
 
         })
         .then((data) => {
-            console.log(data)
+            //console.log(data)
             setProfileData(data);
         });
-    }, []); 
-
-
+    }, [],); 
 
 //template
     return (
         <div className="profile_card">
-            <div>
-                <h3>{`${profileData.profile_pic}`}</h3>
-                <h3>{`${profileData.bio}`}</h3>
-                <h3>{`${profileData.email}`}</h3>
-                <img src={profileData.pet_pic} alt='pets'/>
+            <div className="profile_items">
+                <img className="profile_pic" src={profileData.profile_pic} alt='profile_owner'/>
+                <h2>{profileData.username}'s Profile</h2>
+                <h3>Biography</h3><p>{profileData.bio}</p>
+                <h3>Contact me:</h3><p>{profileData.email}</p>
+                <h3>My pets</h3>
+                <img className='pet_pics' src={profileData.pet_pic} alt='pets'/>
+            </div>
+            <div className="active_projects">
+            </div>
+            <div className="closed_projects">
             </div>
         </div>
     );
