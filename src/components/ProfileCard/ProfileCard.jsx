@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ProjectCard from "../ProjectCard/ProjectCard";
+//import ProjectCard from "../ProjectCard/ProjectCard";
 import "./ProfileCard.css";
 
 function ProfileCard() {
@@ -32,13 +32,15 @@ function ProfileCard() {
                 <img className="profile_pic" src={profileData.profile_pic} alt='profile_owner'/>
                 <h2>{profileData.username}'s Profile</h2>
                 <h3>Biography</h3><p>{profileData.bio}</p>
-                <h3>Contact me:</h3><p>{profileData.email}</p>
+                <h3>Contact information:</h3><p>{profileData.email}</p>
                 <h3>My pets</h3>
                 <img className='pet_pics' src={profileData.pet_pic} alt='pets'/>
             </div>
             <div className="active_projects">
+                <h2>Active Projects</h2>
             </div>
             <div className="closed_projects">
+                <h2>Closed Projects</h2>
             </div>
         </div>
     );

@@ -1,38 +1,27 @@
-
+* {
+    border: red solid 1px;
+}
 .profile_card {
     background-color: gray;
     border-radius: 15px;
-    padding: 5%;
     font-family: 'Open Sans', Arial, sans-serif;
     position: relative;
-    overflow: hidden;
-    margin-left: 5%;
-    min-width: 230px;
-    max-width: 315px;
+    margin: 5%;
+    /* min-width: 230px;
+    max-width: 315px; */
     width: 100%;
     color: #ffffff;
     text-align: center;
     line-height: 1.4em;
     display: flex;
-    flex-flow: wrap;
+    flex-direction: row; 
   }
 
-  .projects_card {
-    background-color: gray;
-    border-radius: 15px;
-    padding: 5%;
-    font-family: 'Open Sans', Arial, sans-serif;
-    position: relative;
-    overflow: hidden;
-    margin-left: 5%;
-    min-width: 230px;
-    max-width: 315px;
-    width: 100%;
-    color: #ffffff;
-    text-align: center;
-    line-height: 1.4em;
-    display: flex;
-  }
+  h2 {
+    font-size: 1.5em;
+    margin: 2%;
+    font-weight: bold;
+}
 
   .pledges_card {
     background-color: gray;
@@ -54,6 +43,7 @@
 .profile_items {
     justify-content: center;
     align-content: center;
+    width: 30%; 
 }
 
 .profile_pic {
@@ -74,4 +64,18 @@
     opacity: 1;
     box-shadow: 3px 3px 20px #000FFF;
     border: 2px solid #000FFF;
+}
+
+.active_projects {
+    background-color: gray;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+
+.closed_projects{
+    background-color: gray;
+    min-width: 300px;
+    max-width: 300px;
+
 }

@@ -10,3 +10,19 @@
 img {
   height: 200px; 
 }
+
+#PETBNK {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: initial;
+}
+
+.homepage_loginform {
+  height: 5%;
+  width: 5%;
+}
+
+h3 {
+  text-decoration: underline;
+  text-decoration-color: #000FFF;
+}

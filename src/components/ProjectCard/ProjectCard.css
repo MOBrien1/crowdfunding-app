@@ -1,18 +1,87 @@
 .project-card {
-    width: 100%;
-    border: 1px solid black;
+    border: 1px solid gray;
     box-shadow: 0px 0px 5px gray;
-    background-color: gray;
+    background-color: #f5f5f5;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+
   }
 
-.project-card img {
-    width: 150px;
-    height: 150px;
-    display: block; 
-    margin: auto; 
-    margin-top: 5%;
+.main_img {
+    align-self: center;
+    margin: 3%; 
+    background: 50% 50% no-repeat; /* 50% 50% centers image in div */
+    width: 200px;
+    height: 200px;
+    box-shadow: gray;
+    filter: grayscale(100%);
+    align-items: center;
   }
 
+.location_pin {
+  height: 30px;
+  width: 30px; 
+}
+
+.location_div {
+  display: flex;
+  flex-direction: row;
+}
+
+#link_project{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: smaller;
+  background-color: #000FFF;
+  color: gray;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  padding: 2%;
+}
+
+a {
+    padding: 0%; 
+    color: black;
+    height: fit-content;
+}
+
+a#link_project_1 {
+  color: #f5f5f5;
+}
+
+a#link_project_2 {
+  color: #f5f5f5;
+}
+
+a#link_project_3 {
+  color: #f5f5f5;
+}
+
+
+a:active {
+    color: black;
+}
+
+p {
+  padding: 4%;
+  margin: 0;
+  font-size: 12px;
+}
+
+h3 {
+  margin: 3px;
+  padding: 4%;
+  font-size: 14px;
+}
+
+h4 {
+  margin: 2px;
+  font-size: smaller;
+  color: gray;
+}
   
   
 

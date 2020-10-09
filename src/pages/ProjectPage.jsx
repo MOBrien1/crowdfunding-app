@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import "./ProjectPage.css";
 
 function ProjectPage() {
 const [projectData, setProjectData] = useState({ pledges: [] });
@@ -19,21 +20,27 @@ useEffect(() => {
 }, [id]); 
 
     return (
-        <div>
-            <h2>{`Title: ${projectData.title}`}</h2>
-            <h3>{`Status: ${projectData.is_open === false ? "Complete" : "Active"}`}</h3>
-            <h3>Posted: {date.toLocaleDateString()}</h3>
+        <div className="projectpage_div">
             <img src={projectData.image} alt='project'/>
-            <h3> Pledges from: </h3>
-            <ul>
-                {projectData.pledges.map((pledgeData, key) => {
-                    return (
-                        <li>
-                            {pledgeData.supporter} 
-                        </li>
-                    );
-                })}
-            </ul>
+            <h2>{projectData.title}</h2>
+            <p>{projectData.description}</p>
+            <div className="project_details_1">
+                <h3>Posted: {date.toLocaleDateString()}</h3>
+                <h3>{`Status: ${projectData.is_open === false ? "Complete" : "Active"}`}</h3>
+            </div>
+            <div className="pledge_list">
+                <h3> Pledges from: </h3>
+                <ul>
+                    {projectData.pledges.map((pledgeData, key) => {
+                        return (
+                            <li>
+                                {pledgeData.supporter} 
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
+
         </div>
         );
     }

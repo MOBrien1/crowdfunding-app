@@ -27,14 +27,14 @@ nav a {
     height: fit-content;
 }
 
-a:visited {
+nav a:visited {
     color: white;
 }
 
-a:hover {
-    color: grey;
+nav a:hover {
+    color: white;
 }
 
-a:active {
+nav a:active {
     color: white;
 }

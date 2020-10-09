@@ -12,7 +12,7 @@ function AddProject() {
         suburb: "",
         seeking: "",
         is_open: "",
-        date_created: "",
+        date_created: "0000-00-00 06:00:00.000000",
     });
 
     const history = useHistory();
@@ -51,6 +51,9 @@ function AddProject() {
         if (credentials.title) {
             postData().then((response) => {
                 history.push("/"); 
+            })
+            .catch((error) => {
+                alert("Sorry your credentials appear invalid");
             });
         }
     };

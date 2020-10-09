@@ -30,8 +30,8 @@ function App() {
           <Route path="/">
           <HomePage />
           </Route>
-          {/* <Route path="/AddProject">
-          <CreateProject />
+          {/* <Route path="/pledge">
+          <Pledge />
           </Route> */}
         </Switch>
 
